@@ -17,7 +17,7 @@ VOLUME ["$DOCKYARD_SRVHOME/media/", "$DOCKYARD_SRVHOME/logs/"]
 
 COPY $DOCKYARD_SRC $DOCKYARD_SRVPRO
 
-RUN pip install -r /home/kiran/dockdjanclone/dockerdjango/helloworld/requirements.txt
+RUN pip install -r $DOCKYARD_SRVPROJ/requirements.txt
 
 EXPOSE 8000
 
